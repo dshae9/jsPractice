@@ -1,3 +1,3 @@
-function message() {
-    alert("Hello");
+function message(msg) {
+    document.getElementById('output').innerHTML = msg + " event";
 }
