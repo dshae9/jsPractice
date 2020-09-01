@@ -1,0 +1,9 @@
+body {
+    background-color: pink;
+}
+
+div {
+    width: 450px;
+    height: 450px;
+    border: dashed 2px lavender;
+}
