@@ -16,9 +16,32 @@
 
         <p id="output"></p>
 
-        <button onclick="message()"> message </button>
+        <button type="button" onclick="displayDate()"> What's today? </button>
+        <p id="demo"></p>
 
 
+    </div>
+
+    <div>
+        <h1>Modifying the DOM</h1>
+
+        <button onclick="document.getElementById('stuff').innerHTML = 'Clicked First Button';"> First </button>
+        <button onclick="document.getElementById('stuff').innerHTML = 'Clicked Second Button';"> Second </button>
+
+        <p id="stuff">This will change</p>
+        <p>This will not</p>
+
+    </div>
+
+    <div>
+        <h1>Changing Styles with JavaScript</h1>
+
+
+        <button type="button" onclick="openMe()">Open</button>
+
+        <button type="button" onclick="closeMe()">Close</button>
+
+        <p id="yoohoo"> Hello, Goodbye</p>
     </div>
 
 </body>

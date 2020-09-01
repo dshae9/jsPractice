@@ -7,3 +7,11 @@ div {
     height: 450px;
     border: dashed 2px lavender;
 }
+
+.open {
+    display: block;
+}
+
+.closed {
+    display: none;
+}
