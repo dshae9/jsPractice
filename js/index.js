@@ -29,3 +29,22 @@ function openMe() {
     //option 2: change class name (change class style in the css page)
     //x.className = "open";
 }
+
+//function for using "this"
+
+function showProperties(element) {
+    document.getElementById('note').innerHTML = element.alt;
+}
+
+//using arrays
+var places = ["Germany", "France", "Canada"];
+
+function loadPlaces() {
+    document.getElementById("places").innerHTML = places;
+}
+
+function myFunction() {
+    var place = prompt("Where else have you traveled?");
+    places[places.length] = place;
+    document.getElementById("places").innerHTML = places;
+}

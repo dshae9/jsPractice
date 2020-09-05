@@ -45,7 +45,26 @@
     </div>
 
     <div>
-        
+        <h1>Using "this"</h1>
+
+        <h2 id="note">Hover over an image to display the alt text</h2>
+
+        <img class="photo" src="pics/bershine.jpg" alt="A cute selfie of me in Berlin 2018" onmouseover="showProperties(this)" onmouseleave="document.getElementById('note').innerHTML='Hover over an image to display the alt text';" />
+
+        <img class="photo" src="pics/lashine.JPG" alt="A cute selfie of me in LA 2018" onmouseover="showProperties(this)" onmouseleave="document.getElementById('note').innerHTML='Hover over an image to display the alt text';" />
+
+        <img class="photo" src="pics/lashineee.jpg" alt="An even cuter selfie of me in LA 2018" onmouseover="showProperties(this)" onmouseleave="document.getElementById('note').innerHTML='Hover over an image to display the alt text';" />
+
+
+    </div>
+
+    <div onload="loadPlaces()">
+        <h1>Arrays</h1>
+
+
+        <button onclick="myFunction()"> Add places you've been </button>
+
+        <p id="places"> </p>
 
     </div>
 
