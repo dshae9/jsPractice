@@ -48,3 +48,29 @@ function myFunction() {
     places[places.length] = place;
     document.getElementById("places").innerHTML = places;
 }
+
+//syntax for iterations & finding the average of an array
+var grades = [100, 95, 92, 56, 85, 90, 91, 96, 100, 88, 84];
+
+var sum = 0;
+if (grades.length > 0) {
+    for (index = 0; index < grades.length; index++) {
+        sum += grades[index];
+    }
+
+    document.write(sum / grades.length);
+} else
+    document.write("Empty Array");
+
+
+
+//forms
+function nicknameFunction() {
+    if (document.getElementById('yesNick').checked) {
+        document.getElementById('nick').style.display = "inline";
+        document.getElementById('nickname').setAttribute('required', true);
+    } else {
+        document.getElementById('nickname').removeAttribute('required');
+        document.getElementById('nick').style.display = "none";
+    }
+}
